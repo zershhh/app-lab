@@ -1,9 +1,20 @@
 //Challenge 1
-let max=6
+let max=5
 let line = "#"
+let space = ' '
+let num = 3
+
+String.prototype.times = function(n) {  
+    return Array.prototype.join.call({length:n+1}, this);  
+};  
+
 for (let i=1;i<max; i++){
-    console.log(line);
-    line= line+'#'
+    console.log(space.times(num)+line+space.times(num));
+
+    if (num !== 0){
+        num = num -1};
+
+    line= line+'##'
 }
 
 //Challenge 2
